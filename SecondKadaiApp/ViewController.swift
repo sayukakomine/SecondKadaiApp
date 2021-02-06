@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // @IBOutlet weak var textfield: UITextField!
+     @IBOutlet weak var textfield: UITextField!
     
     
     
@@ -27,7 +27,6 @@ class ViewController: UIViewController {
         resultViewController.text = textfield.text
     }
     
-    @IBOutlet weak var textfield: UITextField!
     
     
     @IBAction func unwind(_ segue: UIStoryboardSegue) {

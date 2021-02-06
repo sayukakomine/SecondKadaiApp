@@ -31,8 +31,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="送信"/>
                                 <connections>
-                                    <action selector="send:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hA7-sN-a0K"/>
-                                    <action selector="textfield:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8f0-Nx-WMb"/>
                                     <segue destination="NeS-FC-4XL" kind="show" id="27g-gu-RIs"/>
                                 </connections>
                             </button>
@@ -49,8 +47,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="label" destination="S02-qv-aA2" id="g7E-ok-00d"/>
-                        <outlet property="textfield" destination="XB3-Md-Okh" id="3qf-3w-Jhy"/>
+                        <outlet property="textfield" destination="XB3-Md-Okh" id="LBW-nO-jwz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -70,7 +67,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
-                                    <segue destination="s1G-hJ-Qg3" kind="unwind" unwindAction="unwind:" id="pJM-zu-zZo"/>
+                                    <segue destination="s1G-hJ-Qg3" kind="unwind" unwindAction="unwind:" id="RgR-UP-Kg2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSG-tk-hfh">
