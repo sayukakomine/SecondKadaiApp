@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,45 +12,45 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SecondKadaiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="名前を入力してください" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XB3-Md-Okh">
-                                <rect key="frame" x="94.666666666666686" y="214" width="186" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGP-gb-Cpj">
-                                <rect key="frame" x="165" y="298" width="45" height="30"/>
-                                <state key="normal" title="button"/>
-                                <connections>
-                                    <action selector="send:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hA7-sN-a0K"/>
-                                    <segue destination="NeS-FC-4XL" kind="show" id="W2c-wf-DoX"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S02-qv-aA2">
-                                <rect key="frame" x="92" y="94" width="191" height="20"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="67.666666666666686" y="144" width="279" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="名前を入力してください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XB3-Md-Okh">
+                                <rect key="frame" x="75.666666666666686" y="214" width="263" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGP-gb-Cpj">
+                                <rect key="frame" x="181.66666666666666" y="289" width="51" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="送信"/>
+                                <connections>
+                                    <action selector="send:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hA7-sN-a0K"/>
+                                    <action selector="textfield:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8f0-Nx-WMb"/>
+                                    <segue destination="NeS-FC-4XL" kind="show" id="27g-gu-RIs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="XB3-Md-Okh" firstAttribute="top" secondItem="S02-qv-aA2" secondAttribute="bottom" constant="50" id="6ql-u8-S75"/>
-                            <constraint firstItem="XB3-Md-Okh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nt6-Ns-lLd"/>
-                            <constraint firstItem="GGP-gb-Cpj" firstAttribute="top" secondItem="XB3-Md-Okh" secondAttribute="bottom" constant="100" id="VsJ-mh-Ogf"/>
-                            <constraint firstItem="S02-qv-aA2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YWy-kr-hJ3"/>
-                            <constraint firstItem="S02-qv-aA2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="ZbS-wE-bDE"/>
-                            <constraint firstItem="S02-qv-aA2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="fYS-KE-ymX"/>
-                            <constraint firstItem="GGP-gb-Cpj" firstAttribute="top" secondItem="XB3-Md-Okh" secondAttribute="bottom" constant="50" id="iHk-MX-WtY"/>
-                            <constraint firstItem="XB3-Md-Okh" firstAttribute="top" secondItem="S02-qv-aA2" secondAttribute="bottom" constant="100" id="mRq-AE-Ozz"/>
-                            <constraint firstItem="GGP-gb-Cpj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pRy-Iw-Uak"/>
+                            <constraint firstItem="S02-qv-aA2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="3Zy-hD-3Ja"/>
+                            <constraint firstItem="XB3-Md-Okh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6hg-Mz-JvZ"/>
+                            <constraint firstItem="GGP-gb-Cpj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GoT-AO-HoZ"/>
+                            <constraint firstItem="S02-qv-aA2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LMf-aK-uga"/>
+                            <constraint firstItem="GGP-gb-Cpj" firstAttribute="top" secondItem="XB3-Md-Okh" secondAttribute="bottom" constant="40" id="jcL-xO-3bx"/>
+                            <constraint firstItem="XB3-Md-Okh" firstAttribute="top" secondItem="S02-qv-aA2" secondAttribute="bottom" constant="40" id="lwc-Xq-1Lx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="label" destination="S02-qv-aA2" id="g7E-ok-00d"/>
+                        <outlet property="textfield" destination="XB3-Md-Okh" id="3qf-3w-Jhy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -62,33 +62,37 @@
             <objects>
                 <viewController id="NeS-FC-4XL" customClass="ResultViewController" customModule="SecondKadaiApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6EK-50-COO">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Jh-Zr-4Fg">
-                                <rect key="frame" x="172" y="221" width="31" height="30"/>
+                                <rect key="frame" x="181.66666666666666" y="170" width="51" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
                                     <segue destination="s1G-hJ-Qg3" kind="unwind" unwindAction="unwind:" id="pJM-zu-zZo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSG-tk-hfh">
-                                <rect key="frame" x="161" y="146" width="41.666666666666657" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSG-tk-hfh">
+                                <rect key="frame" x="177.66666666666666" y="100" width="59" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="7Jh-Zr-4Fg" firstAttribute="top" secondItem="PSG-tk-hfh" secondAttribute="bottom" constant="100" id="0na-6m-hjO"/>
-                            <constraint firstItem="PSG-tk-hfh" firstAttribute="top" secondItem="bqy-4L-873" secondAttribute="top" constant="100" id="6VM-wn-nPc"/>
-                            <constraint firstItem="7Jh-Zr-4Fg" firstAttribute="centerX" secondItem="6EK-50-COO" secondAttribute="centerX" id="Hnq-sq-Ahf"/>
-                            <constraint firstItem="PSG-tk-hfh" firstAttribute="centerX" secondItem="6EK-50-COO" secondAttribute="centerX" id="kjA-0D-Viu"/>
+                            <constraint firstItem="PSG-tk-hfh" firstAttribute="centerX" secondItem="6EK-50-COO" secondAttribute="centerX" id="6d5-Jn-iET"/>
+                            <constraint firstItem="PSG-tk-hfh" firstAttribute="top" secondItem="bqy-4L-873" secondAttribute="top" constant="100" id="QgI-Ay-odd"/>
+                            <constraint firstItem="7Jh-Zr-4Fg" firstAttribute="centerX" secondItem="6EK-50-COO" secondAttribute="centerX" id="bt2-fD-raY"/>
+                            <constraint firstItem="7Jh-Zr-4Fg" firstAttribute="top" secondItem="PSG-tk-hfh" secondAttribute="bottom" constant="40" id="tAd-ws-UQD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bqy-4L-873"/>
                     </view>
                     <navigationItem key="navigationItem" id="eLu-w8-JCv"/>
+                    <connections>
+                        <outlet property="label" destination="PSG-tk-hfh" id="VHG-c1-mLB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eK6-x6-1xg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="s1G-hJ-Qg3" userLabel="Exit" sceneMemberID="exit"/>
